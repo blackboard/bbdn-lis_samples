@@ -14,7 +14,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
       <groupRecord xmlns:gms="http://www.imsglobal.org/services/lis/gms2p0/wsdl11/sync/imsgms_v2p0">
             <sourcedGUID>
                 <refAgentInstanceID>ID</refAgentInstanceID>
-                <sourcedId>test_term</sourcedId> 				<!-- sourcedid.id (there is no batch_uid for TERMs) -->
+                <sourcedId>test_term</sourcedId> 						<!-- sourcedid.id (there is no batch_uid for TERMs) -->
             </sourcedGUID>
             <group>
                 <groupType>
@@ -26,7 +26,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                         <id>ValueId</id>
                         <type>
                             <language>en_US</language>
-                            <textString>TERM</textString>    <!-- typevalue explaining this is a TERM, same as legacy XML -->
+                            <textString>TERM</textString>    			<!-- typevalue explaining this is a TERM, same as legacy XML -->
                         </type>
                         <level>
                             <language>en_US</language>
@@ -37,9 +37,9 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                 <email>test@example.com</email>
                 <url>http://www.example.com</url>
                 <timeframe>
-                    <begin>2012-01-16</begin> 				<!-- Term Begin Date -->
-                    <end>2015-05-10</end>  					<!-- Term End Date -->
-                    <restrict>true</restrict> 				<!-- true = Use Dates; false = Continuous -->
+                    <begin>2012-01-16</begin> 							<!-- Term Begin Date -->
+                    <end>2015-05-10</end>  								<!-- Term End Date -->
+                    <restrict>true</restrict> 							<!-- true = Use Dates; false = Continuous -->
                     <adminPeriod>
                         <language>en_US</language>
                         <textString>admin_period_babble</textString> 	<!-- IGNORED by Learn -->

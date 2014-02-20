@@ -314,7 +314,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 							</instanceName>
 							<instanceValue>
 								<language>en</language>
-								<textString></textString>							<!-- Date of Death IGNORED by Learn (found it entertaining, nonetheless) -->
+								<textString></textString>							<!-- Date of Death IGNORED by Learn -->
 							</instanceValue>
 						</eventDate>
 						<gender>male</gender>										<!-- Gender VALUE (male/female) -->
@@ -389,7 +389,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 								<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/systemrolevocabularyv1p0</instanceVocabulary>
 								<instanceValue>
 									<language>en</language>
-									<textString></textString>							<!-- System Role BUT do not know the variables here -->
+									<textString></textString>						<!-- System Role VALUE -->
 								</instanceValue>
 							</institutionroletype>
 							<primaryroletype>false</primaryroletype>
@@ -403,7 +403,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 								<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/systemrolevocabularyv1p0</instanceVocabulary>
 								<instanceValue>
 									<language>en</language>
-									<textString>Student</textString>						<!-- Institution Role VALUE -->
+									<textString>Student</textString>				<!-- Institution Role VALUE -->
 								</instanceValue>
 							</institutionroletype>
 							<primaryroletype>false</primaryroletype>
@@ -411,7 +411,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 						<userId>
 							<userIdValue>
 								<language>en</language>
-								<textString>loginidblah</textString>						<!-- Login ID IGNORED by Learn -->
+								<textString>loginidblah</textString>				<!-- Login ID IGNORED by Learn -->
 							</userIdValue>
 							<userIdType>
 								<language>en</language>
@@ -433,7 +433,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 						<userId>
 							<userIdValue>
 								<language>en</language>
-								<textString>A00001154</textString>							<!-- ID IGNORED by Learn -->
+								<textString>A00001154</textString>					<!-- ID IGNORED by Learn -->
 							</userIdValue>
 							<userIdType>
 								<language>en</language>
@@ -455,7 +455,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 						<userId>
 							<userIdValue>
 								<language>en</language>
-								<textString>user_blah</textString>						<!-- User_ID and Student_ID VALUE -->
+								<textString>user_blah</textString>					<!-- User_ID and Student_ID VALUE -->
 							</userIdValue>
 							<userIdType>
 								<language>en</language>
@@ -463,11 +463,11 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 							</userIdType>
 							<password>
 								<language>en</language>
-								<textString>blah_pasword</textString>							<!-- User Password VALUE -->
+								<textString>blah_pasword</textString>				<!-- User Password VALUE -->
 							</password>
 							<pwEncryptionType>
 								<language>en</language>
-								<textString></textString>								<!-- Encryption value (if applicable) -->
+								<textString></textString>							<!-- Encryption value (if applicable) -->
 							</pwEncryptionType>
 							<authenticationType>
 								<language>en</language>
