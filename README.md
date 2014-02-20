@@ -1,9 +1,11 @@
 bbdn-lis_samples
 ================
 
-LIS 2.0 Sample files for replaceCourseSection, replacePerson, replaceMembership, replaceGroup and Bulk services.
+This project provides LIS 2.0 Sample files for replaceCourseSection, replacePerson, replaceMembership, replaceGroup, and LIS Bulk services.
 
-These sample files are referenced by blackboard help LIS 2.0 documentation - LIS 2.0 Data Format and LIS 2.0 Integration Testing
+These sample files are referenced on Blackboard Help (http://help.blackboard.com) under Administrator SIS Integration LIS Integration documentation. Specifically, LIS 2.0 Data Format and LIS 2.0 Integration Testing.
+
+----
 
 These files are released under the following license:
 
