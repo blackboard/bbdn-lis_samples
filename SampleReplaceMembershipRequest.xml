@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <imsx_syncRequestHeaderInfo xmlns="http://www.imsglobal.org/services/lis/mms2p0/wsdl11/sync/imsmms_v2p0">
+
+      <imsx_version>V2.0</imsx_version>
+      <imsx_messageIdentifier />
+    </imsx_syncRequestHeaderInfo>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <replaceMembershipRequest xmlns:mms="http://www.imsglobal.org/services/lis/gms2p0/wsdl11/sync/imsgms_v2p0">
+
+      <sourcedId>
+      003276-01-0590-1-1-01210-AA0012</sourcedId>
+      <membershipRecord xmlns:mms="http://www.imsglobal.org/services/lis/gms2p0/wsdl11/sync/imsgms_v2p0">
+
+        <sourcedGUID>
+          <sourcedId>
+          003276-01-0590-1-1-01210-AA0012</sourcedId>
+        </sourcedGUID>
+        <membership>
+          <collectionSourcedId>
+          003276-01-0590-1-1-01210</collectionSourcedId>
+          <membershipIdType>
+          courseSection</membershipIdType>
+          <member>
+            <personSourcedId>AA0012</personSourcedId>
+            <role>
+              <roleType>Instructor</roleType>
+              <subRole>Instructor</subRole>
+              <timeFrame />
+              <status>Active</status>
+              <dataSource>CS</dataSource>
+              <recordInfo>
+                <metadataNameVocabulary />
+                <metadataTypeVocabulary />
+                <extensionField>
+                  <fieldName>Mode</fieldName>
+                  <fieldType>String</fieldType>
+                  <fieldValue>C</fieldValue>
+                </extensionField>
+              </recordInfo>
+              <extension>
+                <extensionNameVocabulary />
+                <extensionTypeVocabulary>extensionvocabularyv1p0</extensionTypeVocabulary>
+                <extensionField>
+                  <fieldName>Mode</fieldName>
+                  <fieldType>String</fieldType>
+                  <fieldValue>C</fieldValue>
+                </extensionField>
+              </extension>
+            </role>
+          </member>
+        </membership>
+      </membershipRecord>
+    </replaceMembershipRequest>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

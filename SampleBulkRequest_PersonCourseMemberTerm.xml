@@ -1,0 +1,786 @@
+<!—<?xml version='1.0' encoding='ISO-8859-1'?>
+<bulkDataRecord xmlns="http://www.imsglobal.org/services/lis/bdemsv1p0/imsbdemsDataFile_v1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/services/lis/bdemsv1p0/imsbdemsDataFile_v1p0 ../schemas/imsbdemsDataFile_v1p0.xsd">
+    <!-- Consider everything ABOVE this line as the "feed file header" -->
+    <!-- start persons here -->
+    <transactionRecord>
+        <transactionOpIdentifier>identifier</transactionOpIdentifier>
+        <serviceName>PersonManagementService</serviceName>
+        <interfaceName>PersonManager</interfaceName>
+        <operationName>replacePerson</operationName>
+        <!-- Consider everything ABOVE this line as the "personRecord header"; 
+            operationName will be replacePerson or deletePerson -->
+	<parameterSet>
+		<parameterRecord>
+			<parameterInvoc>In</parameterInvoc>
+			<parameterName>sourcedId</parameterName>
+			<parameterType>GUID</parameterType>
+			<parameterValue>55555</parameterValue> <!-- ID for logging -->
+		</parameterRecord>
+		<parameterRecord>
+			<parameterInvoc>In</parameterInvoc>
+			<parameterName>personRecord</parameterName>
+			<parameterType>PersonRecord</parameterType>
+			<parameterValue>
+				<personRecord>
+					<sourcedGUID>
+						<refAgentInstanceID>unknown</refAgentInstanceID>
+						<sourcedId>55555</sourcedId> <!-- batch_uid (for real) -->
+					</sourcedGUID>
+					<person> <!-- start person record -->
+						<formname>
+							<formnameType>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/formatnmetypevocabularyv1p0</instanceVocabulary>
+							<instanceValue>
+								<language>en</language>
+								<textString>Full</textString>
+							</instanceValue>
+						</formnameType>
+						<formattedName>
+							<language>en</language>
+							<textString>Dr. Firstblah Middleblah Lastblah, Jr.</textString>		<!-- Full Name IGNORED by Learn-->
+						</formattedName>
+					</formname>
+					<name>
+						<nameType>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/partnamevocabularyv1p0</instanceVocabulary>
+							<instanceValue>
+								<language>en</language>
+								<textString>Full</textString>			
+							</instanceValue>
+						</nameType>
+						<partName>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Nickname</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>Nickname</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Nickname</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>nicknameblah</textString>					<!-- Nickname IGNORED by Learn-->
+							</instanceValue>
+						</partName>
+						<partName>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Family</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>Family</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Family</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>Lastblah</textString>					<!-- Last Name VALUE-->
+							</instanceValue>
+						</partName>
+						<partName>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Given</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>Given</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Given</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>Firstblah</textString>					<!-- First Name VALUE-->
+							</instanceValue>
+						</partName>
+						<partName>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Prefix</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>Prefix</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Prefix</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>Dr.</textString>						<!-- Title / Prefix VALUE -->
+							</instanceValue>
+						</partName>
+						<partName>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Suffix</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>Suffix</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Suffix</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>Jr.</textString>						<!-- Suffix VALUE -->
+							</instanceValue>
+						</partName>
+						<partName>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Middle</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>Middle</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Middle</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>Middleblah</textString>					<!-- Middle Name VALUE -->
+							</instanceValue>
+						</partName>
+					</name>
+					<address>
+						<addressType>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/addresstypevocabularyv1p0</instanceVocabulary>
+							<instanceValue>
+								<language>en</language>
+								<textString></textString>
+							</instanceValue>
+						</addressType>
+						<addressPart>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/addresspartvocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>NonfieldedStreetAddress1</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>1234 Street Blah</textString>			<!-- Address - Street1 VALUE -->
+							</instanceValue>
+						</addressPart>
+						<addressPart>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/addresspartvocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>NonfieldedStreetAddress2</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>Apt. Blah</textString>					<!-- Address - Street2 VALUE (entire addressPart section missing if SIS field is null)-->
+							</instanceValue>
+						</addressPart>
+						<addressPart>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/addresspartvocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>City</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>Cityblah</textString>					<!-- Address - City VALUE -->
+							</instanceValue>
+						</addressPart>
+						<addressPart>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/addresspartvocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>StatePr</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>DC</textString>							<!-- Address - State VALUE -->
+							</instanceValue>
+						</addressPart>
+						<addressPart>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/addresspartvocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Postcode</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>12345</textString>						<!-- Address - Zipcode VALUE -->
+							</instanceValue>
+						</addressPart>
+						<addressPart>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/addresspartvocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Country</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>USA</textString>						<!-- Address - Country VALUE -->
+							</instanceValue>
+						</addressPart>
+					</address>
+					<contactinfo>											
+						<contactinfoType>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/contactinfotypevocabularyv1p0</instanceVocabulary>
+							<instanceValue>
+								<language>en</language>
+								<textString></textString>
+							</instanceValue>
+						</contactinfoType>
+						<contactinfoValue>
+							<language>en</language>
+							<textString></textString>
+						</contactinfoValue>
+					</contactinfo>
+					<contactinfo>
+						<contactinfoType>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/contactinfotypevocabularyv1p0</instanceVocabulary>
+							<instanceValue>
+								<language>en</language>
+								<textString>EmailPrimary</textString>
+							</instanceValue>
+						</contactinfoType>
+						<contactinfoValue>
+							<language>en</language>
+							<textString>fl@blahblahblah.edu</textString>			<!-- E-Mail Address VALUE -->
+						</contactinfoValue>
+					</contactinfo>
+					<demographics>
+						<demographicsType>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>unknown</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/demographicsinfovocabularyv1p0</instanceVocabulary>
+							<instanceValue>
+								<language>en</language>
+								<textString>Primary</textString>
+							</instanceValue>
+						</demographicsType>
+						<eventDate>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Birth</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/eventdatevocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Birth</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>1972-03-05</textString>					<!-- Date of Birth VALUE (YYYY-MM-DD) -->
+							</instanceValue>
+						</eventDate>
+						<eventDate>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Death</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/eventdatevocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Death</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString></textString>							<!-- Date of Death IGNORED by Learn (found it entertaining, nonetheless) -->
+							</instanceValue>
+						</eventDate>
+						<gender>male</gender>										<!-- Gender VALUE (male/female) -->
+						<demographicInfo>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>PlaceofBirth</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/demographicsinfovocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>PlaceofBirth</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>Silver Spring</textString>		
+							</instanceValue>
+						</demographicInfo>
+						<demographicInfo>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>MaritalStatus</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/demographicsinfovocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>MaritalStatus</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>S</textString>
+							</instanceValue>
+						</demographicInfo>
+						<demographicInfo>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>Ethnicity</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/demographicsinfovocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>Ethnicity</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>4</textString>
+							</instanceValue>
+						</demographicInfo>
+					</demographics>
+					<roles>
+						<enterpriserolesType>
+							<instanceIdentifier>
+								<language>en</language>
+								<textString>StudentInformationSystem</textString>
+							</instanceIdentifier>
+							<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/epriserolestypevocabularyv1p0</instanceVocabulary>
+							<instanceName>
+								<language>en</language>
+								<textString>StudentInformationSystem</textString>
+							</instanceName>
+							<instanceValue>
+								<language>en</language>
+								<textString>role</textString>
+							</instanceValue>
+						</enterpriserolesType>
+						<institutionRole>
+							<institutionroletype>
+								<instanceIdentifier>
+									<language>en</language>
+									<textString>unknown</textString>
+								</instanceIdentifier>
+								<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/systemrolevocabularyv1p0</instanceVocabulary>
+								<instanceValue>
+									<language>en</language>
+									<textString></textString>							<!-- System Role BUT do not know the variables here -->
+								</instanceValue>
+							</institutionroletype>
+							<primaryroletype>false</primaryroletype>
+						</institutionRole>
+						<institutionRole>
+							<institutionroletype>
+								<instanceIdentifier>
+									<language>en</language>
+									<textString>unknown</textString>
+								</instanceIdentifier>
+								<instanceVocabulary>http://www.imsglobal.org/lis/pmsv2p0/systemrolevocabularyv1p0</instanceVocabulary>
+								<instanceValue>
+									<language>en</language>
+									<textString>Student</textString>						<!-- Institution Role VALUE -->
+								</instanceValue>
+							</institutionroletype>
+							<primaryroletype>false</primaryroletype>
+						</institutionRole>
+						<userId>
+							<userIdValue>
+								<language>en</language>
+								<textString>loginidblah</textString>						<!-- Login ID IGNORED by Learn -->
+							</userIdValue>
+							<userIdType>
+								<language>en</language>
+								<textString>Logon ID</textString>
+							</userIdType>
+							<password>
+								<language>en</language>
+								<textString>{SSHA}JCkADpIzxrezO7Y9H0Swprn6veJNUEMxTENRVg==</textString>
+							</password>
+							<pwEncryptionType>
+								<language>en</language>
+								<textString>SSHA</textString>
+							</pwEncryptionType>
+							<authenticationType>
+								<language>en</language>
+								<textString></textString>
+							</authenticationType>
+						</userId>
+						<userId>
+							<userIdValue>
+								<language>en</language>
+								<textString>A00001154</textString>							<!-- ID IGNORED by Learn -->
+							</userIdValue>
+							<userIdType>
+								<language>en</language>
+								<textString>SISID</textString>
+							</userIdType>
+							<password>
+								<language>en</language>
+								<textString>{SSHA}JCkADpIzxrezO7Y9H0Swprn6veJNUEMxTENRVg==</textString>
+							</password>
+							<pwEncryptionType>
+								<language>en</language>
+								<textString>SSHA</textString>
+							</pwEncryptionType>
+							<authenticationType>
+								<language>en</language>
+								<textString></textString>
+							</authenticationType>
+						</userId>
+						<userId>
+							<userIdValue>
+								<language>en</language>
+								<textString>user_blah</textString>						<!-- User_ID and Student_ID VALUE -->
+							</userIdValue>
+							<userIdType>
+								<language>en</language>
+								<textString>Email ID</textString>
+							</userIdType>
+							<password>
+								<language>en</language>
+								<textString>blah_pasword</textString>							<!-- User Password VALUE -->
+							</password>
+							<pwEncryptionType>
+								<language>en</language>
+								<textString></textString>								<!-- Encryption value (if applicable) -->
+							</pwEncryptionType>
+							<authenticationType>
+								<language>en</language>
+								<textString></textString>
+							</authenticationType>
+						</userId>
+					</roles>
+				</person> 
+			</personRecord><!-- end person record -->
+			<!-- could have more <personRecord></personRecord>s here -->
+		</parameterValue>
+	</parameterRecord>
+</parameterSet></transactionRecord>
+<!-- start courses here -->
+<transactionRecord><transactionOpIdentifier>identifier</transactionOpIdentifier><serviceName>CourseManagementService</serviceName><interfaceName>CourseSectionManager</interfaceName>
+<operationName>replaceCourseSection</operationName>   <!-- Consider everything ABOVE this line as the "courseSectionRecord header"; operationName will be replaceCourseSection or deleteCourseSection-->
+<parameterSet>
+	<parameterRecord>
+		<parameterInvoc>In</parameterInvoc>
+		<parameterName>sourcedId</parameterName>
+		<parameterType>GUID</parameterType>
+		<parameterValue>test_course</parameterValue>						<!-- batch_uid (log reference only) -->
+	</parameterRecord>
+	<parameterRecord>
+		<parameterInvoc>In</parameterInvoc>
+		<parameterName>courseSectionRecord</parameterName>
+		<parameterType>CourseSectionRecord</parameterType>
+		<parameterValue>
+			<courseSectionRecord>									
+				<sourcedGUID>
+					<refAgentInstanceID>unknown</refAgentInstanceID>
+					<sourcedId>test_course</sourcedId>               		<!-- course_id and batch_uid VALUE-->
+				</sourcedGUID>
+				<courseSection>
+					<label>
+						<language>en</language>
+						<textString>CourseSection</textString>  			<!-- Old TypeValue - used to tell the system what kind of context this is CourseSection -->
+					</label>
+					<title>
+						<language>en</language>
+						<textString>Matt's Test Course</textString>  			<!-- Course Name VALUE -->
+					</title>
+					<parentOfferingId></parentOfferingId>  
+					<catalogDescription>
+						<shortDescription>
+							<language>en</language>
+							<textString>Description blah blah</textString>  <!-- Course Description VALUE -->
+						</shortDescription>
+						<longDescription>
+							<language>en</language>
+							<textString>Long Description longer blah blah blah blah blah blah</textString>  <!-- IGNORED by Learn -->
+						</longDescription>
+						<fullDescription>
+							<mediamode>base64</mediamode>
+							<contentRefType>text</contentRefType>
+							<mimeType>unknown</mimeType>
+							<descriptionText>
+								<language>en</language>
+								<textString>Full Description blah blah blah</textString>  <!-- IGNORED by Learn -->
+							</descriptionText>
+						</fullDescription>
+					</catalogDescription>
+					<status>Active</status>          				<!-- Enable or Disable switch (use Active / Inactive) -->
+					<defaultCredits>
+						<language>en</language>
+						<textString></textString>
+					</defaultCredits>
+					<category>
+						<language>en</language>
+						<textString>Lecture</textString>
+					</category>
+					<maxNumberofStudents>470</maxNumberofStudents>
+					<numberofStudents>422</numberofStudents>
+					<org>
+						<orgName>
+							<language>en</language>
+							<textString>DEP1310</textString>
+						</orgName>
+						<orgUnit>
+							<language>en</language>
+							<textString>School of Mgmt Adm</textString>
+						</orgUnit>
+						<type>
+							<language>en</language>
+							<textString>unknown</textString>
+						</type>
+						<id>
+							<language>en</language>
+							<textString>unknown</textString>
+						</id>
+					</org>
+					<timeFrame>
+						<begin>2012-01-09T13:30:00</begin>			<!-- Duration dates -->
+						<end>2012-05-05T14:45:00</end>
+						<restrict>true</restrict>         			<!-- Switch for Duration (false=continuous; true=uses dates above) -->
+						<adminPeriod>201301</adminPeriod>  		    <!-- Term Association - uses sourcedid.id of Term, not name --> 
+					</timeFrame>
+					<enrollControl>
+						<enrollAccept>true</enrollAccept>
+						<enrollAllowed>false</enrollAllowed>
+					</enrollControl>
+					<location>
+						<language>en</language>
+						<textString>CL50 224</textString>
+					</location>
+					<notes>
+						<language>en</language>
+						<textString>Section Meeting</textString>
+					</notes>
+					<meeting>
+						<language>en</language>
+						<textString>unknown</textString>
+					</meeting>
+					<dataSource>SIS</dataSource>
+					<recordInfo>
+						<metadataNameVocabulary>unknown</metadataNameVocabulary>
+						<metadataTypeVocabulary>unknown</metadataTypeVocabulary>
+						<extensionField>
+							<fieldName>unknown</fieldName>
+							<fieldType>unknown</fieldType>
+							<fieldValue>unknown</fieldValue>
+						</extensionField>
+					</recordInfo>
+					<extension>
+						<extensionNameVocabulary>unknown</extensionNameVocabulary>
+						<extensionValueType>unknown</extensionValueType>
+						<extensionField>
+							<fieldName>LIS20DeliverySystem</fieldName>
+							<fieldType>unknown</fieldType>
+							<fieldValue>WEBCT</fieldValue>
+						</extensionField>
+					</extension>
+				</courseSection>
+			</courseSectionRecord>								<!-- end course record -->
+			<!-- could have more course records here -->
+		</parameterValue>
+	</parameterRecord>
+</parameterSet>
+</transactionRecord>
+<!-- end courses section -->
+<!-- start memberships section -->
+<transactionRecord><transactionOpIdentifier>identifier</transactionOpIdentifier><serviceName>MembershipManagementService</serviceName><interfaceName>MembershipManager</interfaceName>
+<operationName>replaceMembership</operationName>  <!-- Consider everything ABOVE this line as the "Membership header"; operationName will be replaceMembership or deleteMembership-->
+<parameterSet>
+	<parameterRecord>
+		<parameterInvoc>In</parameterInvoc>
+		<parameterName>sourcedId</parameterName>
+		<parameterType>GUID</parameterType>
+		<parameterValue>test_course.55555</parameterValue>			<!-- ID for logging <course.user> -->
+	</parameterRecord>
+	<parameterRecord>
+		<parameterInvoc>In</parameterInvoc>
+		<parameterName>membershipRecord</parameterName>
+		<parameterType>membershipRecord</parameterType>
+		<parameterValue>
+			<membershipRecord>
+				<sourcedGUID>
+					<refAgentInstanceID>unknown</refAgentInstanceID>
+					<sourcedId>test_course.55555</sourcedId>			<!-- batchuid of <course.user> -->
+				</sourcedGUID>
+				<membership>
+					<collectionSourcedId>test_course</collectionSourcedId>	<!-- batchuid of course -->
+					<membershipIdType>courseSection</membershipIdType>
+					<member>
+						<personSourcedId>55555</personSourcedId>			<!-- batchuid of user -->
+						<role>
+							<roleType>Student</roleType>
+							<subRole>Student</subRole>
+							<timeFrame>
+								<begin>2014-02-01T15:00:00</begin>
+								<end>2014-09-01T15:50:00</end>
+								<restrict>false</restrict>					
+								<adminPeriod>
+									<language>en</language>
+									<textString>201330</textString>
+								</adminPeriod>
+							</timeFrame>
+							<status>Active</status>							<!-- Enable / Disable switch -->
+							<dateTime>2011-08-04T15:00:00</dateTime>
+							<creditHours>0</creditHours>
+							<dataSource>SIS</dataSource>
+							<extension>
+								<extensionNameVocabulary>unknown</extensionNameVocabulary>
+								<extensionTypeVocabulary>unknown</extensionTypeVocabulary>
+								<extensionField>
+									<fieldName>LIS2.0Role/Gradable</fieldName>
+									<fieldType>String</fieldType>
+									<fieldValue>Gradable</fieldValue>
+								</extensionField>
+								<extensionField>
+									<fieldName>LIS20DeliverySystem</fieldName>
+									<fieldType>String</fieldType>
+									<fieldValue>BB</fieldValue>
+								</extensionField>
+							</extension>
+						</role>
+					</member>
+					<dataSource>SIS</dataSource>
+				</membership>
+			</membershipRecord>
+		</parameterValue>
+	</parameterRecord>
+</parameterSet></transactionRecord>
+
+<!-- A word about Terms
+
+While creating, updating and deleting Terms works out of the box with the current LIS spec, course association does not.  This is mapped from the course's <adminPeriod>201301_si</adminPeriod> field.  You'll need a custom script in Courses Field Mapping under the Term row:
+
+Term
+(function(){
+var term = data.getCourseSection().getTimeFrames().get(0).getAdminPeriod();
+return term;
+}());
+
+Course Duration based on Term duration dates
+(function(){
+return 'USE_TERM';
+}());
+
+Set Course Use Term Availability to enforce the yes/no availability on the Term 
+(function(){
+var useTerm = true;
+return useTerm;
+}());
+
+-->
+
+<transactionRecord><transactionOpIdentifier>identifier</transactionOpIdentifier><serviceName>GroupManagementService</serviceName><interfaceName>GroupManager</interfaceName><operationName>replaceGroup</operationName><!-- Consider everything ABOVE this line as the "groupManagerRecord header"; operationName will be replaceGroup or deleteGroup-->
+<parameterSet>
+	<parameterRecord>
+		<parameterInvoc>In</parameterInvoc>
+		<parameterName>sourcedId</parameterName>
+		<parameterType>GUID</parameterType>
+		<parameterValue>test_term</parameterValue>				<!-- ID for Logging -->
+	</parameterRecord>
+	<parameterRecord>
+		<parameterInvoc>In</parameterInvoc>
+		<parameterName>termRecord</parameterName>
+		<parameterType>termRecord</parameterType>
+		<parameterValue>
+			<groupRecord> 
+				<sourcedGUID> 
+					<refAgentInstanceID>ID</refAgentInstanceID> 
+					<sourcedId>test_term</sourcedId> 				<!-- sourcedid.id (there is no batch_uid for TERMs) -->
+				</sourcedGUID> 
+				<group> 
+					<groupType> 
+						<scheme> 
+							<language>en_US</language> 
+							<textString>LIS2.0</textString> 
+						</scheme> 
+						<typevalue> 
+							<id>ValueId</id> 
+							<type> 
+								<language>en_US</language> 
+								<textString>TERM</textString>    <!-- typevalue explaining this is a TERM, same as legacy XML -->
+							</type> 
+							<level> 
+								<language>en_US</language> 
+								<textString>1</textString> 
+							</level> 
+						</typevalue> 
+					</groupType> 
+					<email>test@example.com</email> 
+					<url>http://www.example.com</url> 
+					<timeframe> 
+						<begin>2012-01-16</begin> 				<!-- Term Begin Date -->
+						<end>2015-05-10</end>  					<!-- Term End Date -->
+						<restrict>true</restrict> 				<!-- true = Use Dates; false = Continuous -->
+						<adminPeriod> 
+							<language>en_US</language> 
+							<textString>admin_period_babble</textString> 	<!-- IGNORED by Learn -->
+						</adminPeriod> 
+					</timeframe> 
+					<relationship> 
+						<relationId>RelationId</relationId> 
+						<relation>Parent</relation> 
+						<sourcedId>sourcedID_Babble2</sourcedId>
+						<label> 
+							<language>en_US</language> 
+							<textString>Label</textString> 
+						</label> 
+					</relationship> 
+					<enrollControl> 
+						<enrollAccept>true</enrollAccept> 
+						<enrollAllowed>false</enrollAllowed> 
+					</enrollControl> 
+					<description> 
+						<shortDescription>test_term</shortDescription> 				<!-- Term Name -->
+						<longDescription>Long Description Babble</longDescription>  <!-- IGNORED by Learn (no way to get Description filled out in GUI)-->
+					</description> 
+					<dataSource>DataSourceBabble</dataSource> 
+					<recordInfo> 
+						<metadataNameVocabulary>Test</metadataNameVocabulary> 
+						<metadataTypeVocabulary>Test</metadataTypeVocabulary> 
+						<metadataField> 
+							<fieldName>infoName</fieldName> 
+							<fieldType>String</fieldType> 
+							<fieldValue>infoValue</fieldValue> 
+						</metadataField> 
+					</recordInfo> 
+				</group> 
+			</groupRecord> 
+		</parameterValue>
+	</parameterRecord>
+</parameterSet></transactionRecord>
+</bulkDataRecord>							<!-- Master closing tag -->

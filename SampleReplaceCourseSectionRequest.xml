@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <imsx_syncRequestHeaderInfo xmlns="http://www.imsglobal.org/services/lis/cmsv1p0/wsdl11/sync/imscms_v1p0">
+      <imsx_version>V2.0</imsx_version>
+      <imsx_messageIdentifier />
+    </imsx_syncRequestHeaderInfo>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <replaceCourseSectionRequest xmlns:cms="http://www.imsglobal.org/services/lis/cmsv1p0/wsdl11/sync/imscms_v1p0">
+      <sourcedId>001199-01-0590-1-7-03436</sourcedId>
+      <courseSectionRecord xmlns:cms="http://www.imsglobal.org/services/lis/cmsv1p0/wsdl11/sync/imscms_v1p0">
+        <sourcedGUID>
+          <sourcedId>001199-01-0590-1-7-03436</sourcedId>
+        </sourcedGUID>
+        <courseSection>
+          <label>
+            <language>en-US</language>
+            <textString>Basic Studio in Art</textString>
+          </label>
+          <title>
+            <language>en-US</language>
+            <textString>Basic Studio in Art</textString>
+          </title>
+          <parentOfferingId>
+          001199-01-0590-1-7</parentOfferingId>
+          <catalogDescription>
+            <shortDescription>
+              <language>en-US</language>
+              <textString>Basic Studio in Art</textString>
+            </shortDescription>
+            <longDescription>
+              <language>en-US</language>
+              <textString>Basic Studio in Art</textString>
+            </longDescription>
+          </catalogDescription>
+          <category>
+            <language>en-US</language>
+            <textString>LAB</textString>
+          </category>
+          <maxNumberofStudents>0</maxNumberofStudents>
+          <numberofStudents>0</numberofStudents>
+          <org>
+            <orgName>
+              <language>en-US</language>
+              <textString>ART</textString>
+            </orgName>
+          </org>
+          <timeFrame>
+            <begin>2007-08-30T00:00:00.000000</begin>
+            <end>2007-12-12T00:00:00.000000</end>
+          </timeFrame>
+          <location>
+            <language>en-US</language>
+            <textString />
+          </location>
+          <notes>
+            <language>en-US</language>
+            <textString />
+          </notes>
+          <dataSource>CS</dataSource>
+          <recordInfo>
+            <metadataNameVocabulary />
+            <metadataTypeVocabulary />
+            <extensionField>
+              <fieldName>Mode</fieldName>
+              <fieldType>String</fieldType>
+              <fieldValue>C</fieldValue>
+            </extensionField>
+          </recordInfo>
+          <extension>
+            <extensionNameVocabulary />
+            <extensionTypeVocabulary>http://www.imsglobal.org/lis/cmsv1p0/extensionvocabularyv1p0</extensionTypeVocabulary>
+            <extensionField>
+              <fieldName>Mode</fieldName>
+              <fieldType>String</fieldType>
+              <fieldValue>C</fieldValue>
+            </extensionField>
+          </extension>
+        </courseSection>
+      </courseSectionRecord>
+    </replaceCourseSectionRequest>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
