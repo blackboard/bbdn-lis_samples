@@ -1,4 +1,3 @@
-<!—<?xml version='1.0' encoding='ISO-8859-1'?>
 <bulkDataRecord xmlns="http://www.imsglobal.org/services/lis/bdemsv1p0/imsbdemsDataFile_v1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/services/lis/bdemsv1p0/imsbdemsDataFile_v1p0 ../schemas/imsbdemsDataFile_v1p0.xsd">
     <!-- Consider everything ABOVE this line as the "feed file header" -->
     <!-- start persons here -->
@@ -7,8 +6,7 @@
         <serviceName>PersonManagementService</serviceName>
         <interfaceName>PersonManager</interfaceName>
         <operationName>replacePerson</operationName>
-        <!-- Consider everything ABOVE this line as the "personRecord header"; 
-            operationName will be replacePerson or deletePerson -->
+<!-- Consider everything ABOVE this line as the "personRecord header"; operationName will be replacePerson or deletePerson -->
 	<parameterSet>
 		<parameterRecord>
 			<parameterInvoc>In</parameterInvoc>
@@ -489,9 +487,13 @@
 			<!-- could have more <personRecord></personRecord>s here -->
 		</parameterValue>
 	</parameterRecord>
-</parameterSet></transactionRecord>
+</parameterSet>
+</transactionRecord>
 <!-- start courses here -->
-<transactionRecord><transactionOpIdentifier>identifier</transactionOpIdentifier><serviceName>CourseManagementService</serviceName><interfaceName>CourseSectionManager</interfaceName>
+<transactionRecord>
+<transactionOpIdentifier>identifier</transactionOpIdentifier>
+<serviceName>CourseManagementService</serviceName>
+<interfaceName>CourseSectionManager</interfaceName>
 <operationName>replaceCourseSection</operationName>   <!-- Consider everything ABOVE this line as the "courseSectionRecord header"; operationName will be replaceCourseSection or deleteCourseSection-->
 <parameterSet>
 	<parameterRecord>
@@ -618,7 +620,10 @@
 </transactionRecord>
 <!-- end courses section -->
 <!-- start memberships section -->
-<transactionRecord><transactionOpIdentifier>identifier</transactionOpIdentifier><serviceName>MembershipManagementService</serviceName><interfaceName>MembershipManager</interfaceName>
+<transactionRecord>
+<transactionOpIdentifier>identifier</transactionOpIdentifier>
+<serviceName>MembershipManagementService</serviceName>
+<interfaceName>MembershipManager</interfaceName>
 <operationName>replaceMembership</operationName>  <!-- Consider everything ABOVE this line as the "Membership header"; operationName will be replaceMembership or deleteMembership-->
 <parameterSet>
 	<parameterRecord>
@@ -679,31 +684,8 @@
 			</membershipRecord>
 		</parameterValue>
 	</parameterRecord>
-</parameterSet></transactionRecord>
-
-<!-- A word about Terms
-
-While creating, updating and deleting Terms works out of the box with the current LIS spec, course association does not.  This is mapped from the course's <adminPeriod>201301_si</adminPeriod> field.  You'll need a custom script in Courses Field Mapping under the Term row:
-
-Term
-(function(){
-var term = data.getCourseSection().getTimeFrames().get(0).getAdminPeriod();
-return term;
-}());
-
-Course Duration based on Term duration dates
-(function(){
-return 'USE_TERM';
-}());
-
-Set Course Use Term Availability to enforce the yes/no availability on the Term 
-(function(){
-var useTerm = true;
-return useTerm;
-}());
-
--->
-
+</parameterSet>
+</transactionRecord>
 <transactionRecord><transactionOpIdentifier>identifier</transactionOpIdentifier><serviceName>GroupManagementService</serviceName><interfaceName>GroupManager</interfaceName><operationName>replaceGroup</operationName><!-- Consider everything ABOVE this line as the "groupManagerRecord header"; operationName will be replaceGroup or deleteGroup-->
 <parameterSet>
 	<parameterRecord>
